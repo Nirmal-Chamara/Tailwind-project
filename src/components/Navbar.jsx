@@ -51,20 +51,23 @@ export default function Navbar() {
             </div>
         </div>
         {mobileMenuIsOpen &&
-            <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800">
-                <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="md:hidden bg-slate-900/95 backdrop-blur-lg border-t border-slate-800 animate-in slide-in-from-top duration-300">
+                <div className="px-4 py-4 sm:py-6 space-y-3 sm:space-y-4">
                     <a href="#features"
-                        className="text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300">
+                        onClickCapture={() => setMobileMenuIsOpen(false)}
+                        className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300">
                         Features
                     </a>
 
                     <a href="#pricing"
-                        className="text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300">
+                        onClickCapture={() => setMobileMenuIsOpen(false)}
+                        className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300">
                         Pricing
                     </a>
 
                     <a href="#testimonials"
-                        className="text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300">
+                        onClickCapture={() => setMobileMenuIsOpen(false)}
+                        className="block text-gray-300 hover:text-white text-sm lg:text-base transition-colors duration-300">
                         Testimonials
                     </a>
                 </div>
