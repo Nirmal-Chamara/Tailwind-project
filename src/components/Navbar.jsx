@@ -12,7 +12,7 @@ export default function Navbar() {
                         <img src={logo} alt="Logo" className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10" />
                     </div>
                     <span className="text-lg sm:text-xl md:text-2xl font-medium">
-                        <span classname="text-white">Code</span>
+                        <span className="text-white">Code</span>
                         <span className="text-blue-400">Flow</span>
                     </span>
                 </div>
