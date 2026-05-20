@@ -1,6 +1,3 @@
-import { icons } from "lucide-react";
-
-
 export const codeExample = {
     "App.jsx": `
     import { useState } from "react";
@@ -133,4 +130,4 @@ export const floatingCards = {
         title: "Seamless Navigation",
         description: "Build responsive navigation bars that adapt to any screen size with our pre-designed components."
     }
-}
+};
